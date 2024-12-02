@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Logo from '@/assets/logo.svg'
+import { NavItems } from '@/app/components/pages/dashboard/nav-items';
 
 type DashboardLayoutProps = {
     children: ReactNode;
@@ -11,7 +12,10 @@ export default function DashboardLayout({ children } : DashboardLayoutProps) {
 
                 <div className='w-full p-6 border-b border-muted'>
                     <Logo className='max-w-[100px] mx-auto' />
+
                 </div>
+
+                <NavItems/>
 
             </aside>
 
