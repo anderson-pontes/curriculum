@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import Logo from '@/assets/logo.svg'
 import { NavItems } from '@/app/components/pages/dashboard/nav-items';
+import { UserDropdown } from '@/app/components/pages/dashboard/user-dropdwn';
 
 type DashboardLayoutProps = {
     children: ReactNode;
@@ -16,6 +17,10 @@ export default function DashboardLayout({ children } : DashboardLayoutProps) {
                 </div>
 
                 <NavItems/>
+
+                <div className="w-full mt-auto border-t border-muted px-3 py-4 flex items-center justify-between gap-2">
+                    <UserDropdown/>
+                </div>
 
             </aside>
 
